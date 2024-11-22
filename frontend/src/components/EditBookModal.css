@@ -1,0 +1,127 @@
+/* AddBookModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px; /* Add padding for better responsiveness */
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px; /* Slightly increased for a softer look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Enhance shadow for depth */
+  width: 400px; /* Adjusted to make it less wide */
+  max-width: 90%; /* Ensure responsiveness on small screens */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeIn 0.3s ease-in-out;
+  overflow-y: auto; /* Prevent content overflow on smaller screens */
+  max-height: 80vh; /* Prevent it from occupying too much vertical space */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px); /* Subtle slide-in animation */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%; /* Ensure fields are fully responsive */
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #5c6bc0;
+  outline: none;
+  box-shadow: 0 0 4px rgba(92, 107, 192, 0.5);
+}
+
+textarea.input-field {
+  height: 80px; /* Adjusted for a cleaner look */
+  resize: vertical;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.file-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.file-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.image-preview {
+  max-width: 100%; /* Ensure preview is responsive */
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.submit-btn, .cancel-btn {
+  padding: 10px 15px; /* Reduced padding for better proportions */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1; /* Ensure buttons are evenly sized */
+}
+
+.submit-btn {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #3f4b88;
+}
+
+.cancel-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #bdbdbd;
+}

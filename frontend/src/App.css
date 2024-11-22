@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  height: auto;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+.filter label {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.filter select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter select:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.7);
+  outline: none;
+}
+
+.authors-list {
+  margin-top: 20px;
+}
+
+.authors-list h3 {
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.authors-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.authors-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+.authors-list li:hover {
+  background-color: #e0e0e0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 90%;
+  width: 50%;
+  height: auto;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f4f4f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #61dafb;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+

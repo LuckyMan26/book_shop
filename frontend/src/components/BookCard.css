@@ -1,0 +1,79 @@
+.book-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-align: center;
+  width: 220px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+ 
+}
+
+
+
+.book-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.book-card h4 {
+  font-size: 18px;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 8px 0;
+}
+
+.book-card button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.book-card button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.book-card button:first-child:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.book-card button:last-child {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.book-card button:last-child:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
